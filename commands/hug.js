@@ -5,6 +5,15 @@ const neko = require("nekos.life");
 module.exports.run = async (bot, msg, args) => {
     let mention = msg.mentions.members.first();
     if(!args[0]) return msg.channel.send("You can't hug air.");
+    if(args[0] == "@everyone") {
+        let hug = await new neko().getSFWHug();
+        let embed = new Discord.RichEmbed()
+            .setColor(botConfig.color)
+            .setDescription(`**${msg.author}** hugged **@everyone**.`)
+            .setImage(hug.url)
+            .setFooter(hug.url);
+        return msg.channel.send(embed);
+    }
     if(!mention) return msg.channel.send("You can't hug imaginary friends.");
     let hug = await new neko().getSFWHug();
     let embed = new Discord.RichEmbed()
