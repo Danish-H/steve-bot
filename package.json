@@ -1,0 +1,28 @@
+{
+  "name": "stevebot",
+  "version": "1.0.0",
+  "description": "A Discord bot with essentials.",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/DanishH/stevebot.git"
+  },
+  "author": "DanishH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/DanishH/stevebot/issues"
+  },
+  "homepage": "https://gitlab.com/DanishH/stevebot#readme",
+  "dependencies": {
+    "canvas": "^1.6.13",
+    "discord.js": "^11.4.2",
+    "nekos.life": "^1.1.5",
+    "node-opus": "^0.3.1",
+    "simple-youtube-api": "^5.1.1",
+    "urban": "^0.3.2",
+    "ytdl-core": "^0.28.3"
+  }
+}
